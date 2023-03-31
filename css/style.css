@@ -9,7 +9,7 @@ html,
 body {
     min-height: 100vh;
     margin: 0;
-    background-color: rgb(31, 31, 114);
+    background-color: rgb(255, 255, 255);
 }
 
 img {
@@ -17,17 +17,33 @@ img {
 }
 
 h1 {
-    font-size: 200px;
+    font-size: 150px;
     font-family: 'recursive';
     color: white;
-    
+    animation-name: liquidWord;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.matter {
+    padding: 50px;
+    box-shadow: 5px;
+}
+
+.matter--liquid {
+    background: rgb(254,68,97);
+    background: linear-gradient(90deg, rgba(254,68,97,1) 0%, rgba(255,129,91,1) 100%);
+    animation-name: liquidMatter;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 .container {
-    text-align: center;
-    animation-name: liquidAnimation;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
