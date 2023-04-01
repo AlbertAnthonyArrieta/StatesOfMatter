@@ -6,14 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>States of Matter</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
 
     <div class="container">
-        <div class="matter matter--liquid">
-            <h1>liquid</h1>
+
+        <div id="gP" class="matter matter--gas">
+            <h1 class="word word--gas"><span>GAS</h1>
+        </div> 
+        
+        <div id="lP" class="matter matter--liquid">
+            <h1 class="word word--liquid">liquid</h1>
         </div>
+
+        <div id="sP" class="matter matter--solid">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="212" fill="none" viewBox="0 0 1000 212">
+                <path id="s-tri1" fill="#fff" d="M197 1H90l107 130V1Z" />
+                <path id="s-tri2" fill="#fff" d="M102 210.465 0 82v128.465h102Z" />
+                <path id="s-mid" fill="#fff"
+                    d="M198 150.5 74 .5C20.14 3.134 4.78 17.552 0 63l124.5 147.5c50.34-2.54 69.196-13 73.5-60Z" />
+                <path id="o-h1" fill="#fff"
+                    d="M317 211.496V1.565c-36.5-2.511-101-1.02-101 101.45 0 65.791 30 114.508 101 108.481Z" />
+                <path id="o-h2" fill="#fff"
+                    d="M329 211.496V1.565c36.5-2.511 101-1.02 101 101.45 0 65.791-30 114.508-101 108.481Z" />
+                <path id="l-b" fill="#fff" d="M450 1h89v209h-89z" />
+                <path id="l-s" fill="#fff" d="M646 211h-92.5c-1.861-57.32 20.216-71.327 92.5-70.5V211Z" />
+                <path id="i-b" fill="#fff" d="M678 1h89v209h-89z" />
+                <path id="d-h" fill="#fff"
+                    d="M899 211.496V1.565c36.5-2.511 101-1.02 101 101.45 0 65.791-30 114.508-101 108.481Z" />
+                <path id="d-b" fill="#fff" d="M796 1h89v209h-89z" />
+            </svg>
+        </div>
+    </div>
+
+    <div class="container container--btns">
+        <button onclick="gasP()" id="gasBtn">GAS</button>
+        <button onclick="liquidP()"id="liquidBtn">LIQUID</button>
+        <button onclick="solidP()"id="solidBtn">SOLID</button>
     </div>
 
 </body>

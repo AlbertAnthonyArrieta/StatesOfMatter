@@ -12,12 +12,17 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
-img {
-    max-width: 100%;
+.word {
+    font-size: 150px;
 }
 
-h1 {
-    font-size: 150px;
+.word--gas {
+    font-family: 'bubbles';
+    color: rgb(255, 94, 0);
+    animation-name: gasWord;
+}
+
+.word--liquid {
     font-family: 'recursive';
     color: white;
     animation-name: liquidWord;
@@ -26,8 +31,14 @@ h1 {
     animation-timing-function: ease-in-out;
 }
 
+.word--solid {
+    font-family: 'plaster';
+    color: white;
+    animation-name: solidWord;
+}
+
 .matter {
-    padding: 50px;
+    padding: 50px 25px 50px 25px;
     box-shadow: 5px;
 }
 
@@ -40,10 +51,92 @@ h1 {
     animation-timing-function: linear;
 }
 
+.matter--solid {
+    background: rgb(254,68,97);
+    background: linear-gradient(90deg, rgba(254,68,97,1) 0%, rgba(255,129,91,1) 100%);
+}
+
 .container {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
 }
+
+.container--btns {
+    min-height: 0;
+}
+
+
+/* SOLID animations */
+#s-tri2 {
+    animation-name: s-tri2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+#s-mid {
+    animation-name: s-mid;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+#s-tri1 {
+    animation-name: s-tri1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+#o-h1 {
+    animation-name: o-h1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+#o-h2 {
+    animation-name: o-h2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+#l-b {
+    animation-name: l-b;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+#l-s {
+    animation-name: l-s;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+#i-b {
+    animation-name: i-b;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+#d-b {
+    animation-name: d-b;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+#d-h {
+    animation-name: d-h;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
 
