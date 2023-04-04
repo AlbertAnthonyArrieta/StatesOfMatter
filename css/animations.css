@@ -162,3 +162,35 @@
     }
 }
 
+@keyframes solidWord {
+    0% {
+
+    }
+
+    100% {
+        filter: drop-shadow(5px 5px 2px rgb(0 0 0 / 0.4));
+    }
+}
+
+@keyframes gasWord {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(50px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes bubbleAni {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(-100vh);
+    }
+}
+

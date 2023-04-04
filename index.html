@@ -13,10 +13,33 @@
 
 <body>
 
+    
+
+    <div class="container container--btns">
+        <button onclick="gasP()" id="gasBtn">GAS</button>
+        <button onclick="liquidP()"id="liquidBtn">LIQUID</button>
+        <button onclick="solidP()"id="solidBtn">SOLID</button>
+    </div>
+
     <div class="container">
 
         <div id="gP" class="matter matter--gas">
             <h1 class="word word--gas"><span>GAS</h1>
+                <div class="container container--bubbles">
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                </div>
         </div> 
         
         <div id="lP" class="matter matter--liquid">
@@ -24,7 +47,7 @@
         </div>
 
         <div id="sP" class="matter matter--solid">
-            <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="212" fill="none" viewBox="0 0 1000 212">
+            <svg id="solidW" xmlns="http://www.w3.org/2000/svg" width="1000" height="212" fill="none" viewBox="0 0 1000 212">
                 <path id="s-tri1" fill="#fff" d="M197 1H90l107 130V1Z" />
                 <path id="s-tri2" fill="#fff" d="M102 210.465 0 82v128.465h102Z" />
                 <path id="s-mid" fill="#fff"
@@ -41,14 +64,20 @@
                 <path id="d-b" fill="#fff" d="M796 1h89v209h-89z" />
             </svg>
         </div>
-    </div>
 
-    <div class="container container--btns">
-        <button onclick="gasP()" id="gasBtn">GAS</button>
-        <button onclick="liquidP()"id="liquidBtn">LIQUID</button>
-        <button onclick="solidP()"id="solidBtn">SOLID</button>
+        <div id="cP">
+            <h1>Citations</h1>
+            <p>Fonts used:</p>
+            <ul>
+                <li>Gas: https://www.dafont.com/pwbubbles.font?psize=l&text=G+A+S</li>
+                <li>Liquid (Variable Font): https://www.recursive.design/</li>
+                <li>Solid: https://fonts.google.com/specimen/Plaster?preview.text=SOLID&preview.text_type=custom&category=Sans+Serif,Display</li>
+            </ul>
+        </div>
     </div>
-
+    <class class="container">
+        <h2 onclick="citationsP()">Citations</h2>
+    </class>
 </body>
 
 </html>
