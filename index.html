@@ -13,41 +13,42 @@
 
 <body>
 
-    
+
 
     <div class="container container--btns">
         <button onclick="gasP()" id="gasBtn">GAS</button>
-        <button onclick="liquidP()"id="liquidBtn">LIQUID</button>
-        <button onclick="solidP()"id="solidBtn">SOLID</button>
+        <button onclick="liquidP()" id="liquidBtn">LIQUID</button>
+        <button onclick="solidP()" id="solidBtn">SOLID</button>
     </div>
 
     <div class="container">
 
         <div id="gP" class="matter matter--gas">
             <h1 class="word word--gas"><span>GAS</h1>
-                <div class="container container--bubbles">
-                    <div class="bubble"></div>
-                    <div class="bubble"></div>
-                    <div class="bubble"></div>
-                    <div class="bubble"></div>
-                    <div class="bubble"></div>
-                    <div class="bubble"></div>
-                    <div class="bubble"></div>
-                    <div class="bubble"></div>
-                    <div class="bubble"></div>
-                    <div class="bubble"></div>
-                    <div class="bubble"></div>
-                    <div class="bubble"></div>
-                    <div class="bubble"></div>
-                </div>
-        </div> 
-        
+            <div class="container container--bubbles">
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+            </div>
+        </div>
+
         <div id="lP" class="matter matter--liquid">
             <h1 class="word word--liquid">liquid</h1>
         </div>
 
         <div id="sP" class="matter matter--solid">
-            <svg id="solidW" xmlns="http://www.w3.org/2000/svg" width="1000" height="212" fill="none" viewBox="0 0 1000 212">
+            <svg id="solidW" xmlns="http://www.w3.org/2000/svg" width="1000" height="212" fill="none"
+                viewBox="0 0 1000 212">
                 <path id="s-tri1" fill="#fff" d="M197 1H90l107 130V1Z" />
                 <path id="s-tri2" fill="#fff" d="M102 210.465 0 82v128.465h102Z" />
                 <path id="s-mid" fill="#fff"
@@ -66,12 +67,26 @@
         </div>
 
         <div id="cP">
+            <h1>Intent</h1>
+            <p>My intent with this project is to display the states of matter (gas/liquid/solid) in a visual way by
+                bringing the words to life using animation. I used pwbubbles from dafont for gas because it was bubbly
+                and bubbles are made from air/gas. I wanted to display a feeling of freedom by letting the bubbles rise
+                from the word gas. For liquid I used a variable font called recursive. For this word composition I
+                wanted to display fluidity and how the liquid matter takes many forms of shape. For solid I used the
+                font Plaster from google fonts. It is a very geometric font that shows a lot of shape. I wanted to
+                display how solid objects portray strength. It is different from a liquid and gas because they are
+                stable and held in place. I displayed this aspect of solid objects by letting each block of shape in the
+                font bump into each other showing that they can collide with each other while keeping their original
+                structure.
+            </p>
             <h1>Citations</h1>
             <p>Fonts used:</p>
             <ul>
                 <li>Gas: https://www.dafont.com/pwbubbles.font?psize=l&text=G+A+S</li>
                 <li>Liquid (Variable Font): https://www.recursive.design/</li>
-                <li>Solid: https://fonts.google.com/specimen/Plaster?preview.text=SOLID&preview.text_type=custom&category=Sans+Serif,Display</li>
+                <li>Solid:
+                    https://fonts.google.com/specimen/Plaster?preview.text=SOLID&preview.text_type=custom&category=Sans+Serif,Display
+                </li>
             </ul>
         </div>
     </div>
